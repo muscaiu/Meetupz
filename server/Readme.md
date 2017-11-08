@@ -57,3 +57,4 @@ to
 
 6. mongod, npm start and check the new meetupz link created in the page
 
+7. create 2 meetups in put/meetups and see them in mongo
