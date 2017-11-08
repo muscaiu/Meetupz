@@ -43,3 +43,17 @@ to
   }
 }
 
+4. lb model
+    - model name: meetups
+    - source: mongoDB
+    - expose: yes
+    - plural:
+    - common: common
+    - prop1: name : string, required, defaultvalue: blank
+    - prop2: city : string, required, defaultvalue: blank
+    - prop3: address : string, not required, defaultvalue: blank
+
+5. in common/models we have meetups.json with all the props
+
+6. mongod, npm start and check the new meetupz link created in the page
+
