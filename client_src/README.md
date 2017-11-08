@@ -5,3 +5,4 @@ This is the place for your application front-end files.
 
 2. in package.json set PORT= 3001 && react-scripts start //to start on port 3001
 
+3. clean up the client by removing logo, css, etc
