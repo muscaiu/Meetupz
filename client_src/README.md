@@ -10,3 +10,5 @@ This is the place for your application front-end files.
 4. Changed App to a simple function, Added React Router V4, React-Router-Dom
 
 5. Added Router, Created Main, About, Meetups Components
+
+6. Index runs App, App runs Main, Main runs the routes 
