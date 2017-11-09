@@ -34,3 +34,5 @@ This is the place for your application front-end files.
 16. Fetching api/meetups/${meetupId} and displaying it in MeetupDetails
 
 17. Adding plain Edit and Delete buttons in MeetupDetails
+
+18. Created the AddMeetup Form Component with submit action
