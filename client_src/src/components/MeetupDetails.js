@@ -35,6 +35,8 @@ class MeetupDetails extends Component {
                     <li className="collection-item">City: {this.state.details.city}</li>
                     <li className="collection-item">Address: {this.state.details.address}</li>
                 </ul>
+                <Link className="btn" to={`/meetups/edit/${this.state.details.id}`}>Edit</Link>
+                <button className="btn red right">Delete</button>
             </div>
         )
     }
