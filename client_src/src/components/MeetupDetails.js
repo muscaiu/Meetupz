@@ -14,6 +14,8 @@ class MeetupDetails extends Component {
     render() {
         return (
             <div>
+                <br />
+                <Link className="btn grey" to="/">Back</Link>
                 <h1>Details</h1>
             </div>
         )

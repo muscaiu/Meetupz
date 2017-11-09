@@ -28,3 +28,5 @@ This is the place for your application front-end files.
 13. Separated each meetup into MeetupItem Component
 
 14. Added plain MeetupDetails Components and Route
+
+15. Added a Back button(redirect to home)
