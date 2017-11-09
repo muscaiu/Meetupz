@@ -12,3 +12,5 @@ This is the place for your application front-end files.
 5. Added Router, Created Main, About, Meetups Components
 
 6. Index runs App, App runs Main, Main runs the routes 
+
+7. Adding MaterializeCSS, Jquery, and Font-Awesome
