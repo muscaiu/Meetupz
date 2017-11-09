@@ -38,3 +38,5 @@ This is the place for your application front-end files.
 18. Created the AddMeetup Form Component with submit action
 
 19. Posting new meetup to the DB
+
+20. Deleting Meetup
