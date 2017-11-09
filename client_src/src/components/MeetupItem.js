@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 class MeetupItem extends Component {
     constructor(props) {
         super(props)
-        
+
         this.state = {
             item: props.item
         }
@@ -12,7 +12,9 @@ class MeetupItem extends Component {
 
     render() {
         return (
-            <li className="collection-items">{this.props.item.name}</li>
+            <li className="collection-items">
+                <Link to={`/meetups/${this.state.item.id}`} >{this.props.item.name}</Link>
+            </li>
         )
     }
 

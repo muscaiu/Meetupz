@@ -26,3 +26,5 @@ This is the place for your application front-end files.
 12. Added axios to get meetups from /api/meetups and displaying them
 
 13. Separated each meetup into MeetupItem Component
+
+14. Added plain MeetupDetails Components and Route
