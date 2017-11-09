@@ -16,3 +16,5 @@ This is the place for your application front-end files.
 7. Adding MaterializeCSS, Jquery, and Font-Awesome
 
 8. Creating and twaeking Navbar and adding it in App above Main
+
+9. Initializing MaterializeCss Navbar
