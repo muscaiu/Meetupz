@@ -14,3 +14,5 @@ This is the place for your application front-end files.
 6. Index runs App, App runs Main, Main runs the routes 
 
 7. Adding MaterializeCSS, Jquery, and Font-Awesome
+
+8. Creating and twaeking Navbar and adding it in App above Main
