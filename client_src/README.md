@@ -8,3 +8,5 @@ This is the place for your application front-end files.
 3. clean up the client by removing logo, css, etc
 
 4. Changed App to a simple function, Added React Router V4, React-Router-Dom
+
+5. Added Router, Created Main, About, Meetups Components
