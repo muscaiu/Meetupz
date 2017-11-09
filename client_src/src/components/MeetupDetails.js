@@ -25,10 +25,12 @@ class MeetupDetails extends Component {
             .catch(err => console.log(err))
     }
 
-    onDelete(){
+    onDelete() {
+        let meetupId = this.props.match.params.id
+
         axios.request({
             method: 'delete',
-            url: `http://localhost:3000/api/meetups/${this.state.details.id}`,
+            url: `http://localhost:3000/api/meetups/${meetupId}`,
         }).then(response => {
             this.props.history.push('/')
         }).catch(err => console.log(err))

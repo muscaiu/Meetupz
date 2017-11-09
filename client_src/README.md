@@ -40,3 +40,5 @@ This is the place for your application front-end files.
 19. Posting new meetup to the DB
 
 20. Deleting Meetup
+
+21. Editing Meetup
