@@ -18,3 +18,5 @@ This is the place for your application front-end files.
 8. Creating and twaeking Navbar and adding it in App above Main
 
 9. Initializing MaterializeCss Navbar
+
+10. Added the + button
