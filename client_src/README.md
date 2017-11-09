@@ -36,3 +36,5 @@ This is the place for your application front-end files.
 17. Adding plain Edit and Delete buttons in MeetupDetails
 
 18. Created the AddMeetup Form Component with submit action
+
+19. Posting new meetup to the DB
