@@ -19,6 +19,7 @@ class Meetups extends Component {
           // console.log(response.data)
         })
       })
+      .catch(err => console.log(err))
   }
 
   render() {

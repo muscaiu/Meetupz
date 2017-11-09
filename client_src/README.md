@@ -30,3 +30,5 @@ This is the place for your application front-end files.
 14. Added plain MeetupDetails Components and Route
 
 15. Added a Back button(redirect to home)
+
+16. Fetching api/meetups/${meetupId} and displaying it in MeetupDetails
