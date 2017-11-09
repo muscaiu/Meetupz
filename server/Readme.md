@@ -58,3 +58,24 @@ to
 6. mongod, npm start and check the new meetupz link created in the page
 
 7. create 2 meetups in put/meetups and see them in mongo
+
+-------- Back-end Readme.md -----
+
+22. Integreate Fron and Back-end
+# In client_src/package.json add:
+  - "build": "react-scripts build && cp -r build/* ../client/",
+  - npm run build
+
+23. # This will stop displaying the loopback localhost:3000 text blank message
+    In /server/boot/root.js replace :
+    router.get('/', server.loopback.status());
+    to
+    router.get('/');
+
+24. The static page for the loopback server shoud be the client folder
+    In middleware.json add:
+     "files": {
+      "loopback#static": {
+        "params" : "$!../client"
+      }
+    },
