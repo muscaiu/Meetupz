@@ -20,3 +20,7 @@ This is the place for your application front-end files.
 9. Initializing MaterializeCss Navbar
 
 10. Added the + button
+
+11. Added the About page
+
+12. Added axios to get meetups from /api/meetups and displaying them
