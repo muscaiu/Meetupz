@@ -9,24 +9,32 @@ import EditMeetup from './EditMeetup'
 import Login from './Login'
 
 function PrivateRoute({ component: Component, authed, ...rest }) {
-  console.log(authed)
   return (
-    <Route {...rest} render={props => (
-      localStorage.getItem('token') ? (
-        <Component {...props} />
-      ) : (
-          <Redirect to={{
-            pathname: '/login',
-            state: { from: props.location }
-          }} />
-        )
-    )} />
-    // authed === true
-    //   ? <Component {...props} />
-    //   : <Redirect to={{ pathname: '/login', state: { from: props.location } }} />}
-    // />
+    <Route {...rest}
+      render={
+        (props) => authed === true
+          ? <Component {...props} />
+          : <Redirect to={{ pathname: '/login', state: { from: props.location } }}
+          />}
+    />
   )
 }
+
+// function PrivateRoute({ component: Component, authed, ...rest }) {
+//   console.log(authed)
+//   return (
+//     <Route {...rest} render={props => (
+//       localStorage.getItem('token') ? (
+//         <Component {...props} />
+//       ) : (
+//           <Redirect to={{
+//             pathname: '/login',
+//             state: { from: props.location }
+//           }} />
+//         )
+//     )} />
+//   )
+// }
 
 class Routes extends Component {
   render() {
@@ -36,8 +44,8 @@ class Routes extends Component {
         <Route exact path='/' component={Meetups} />
         <Route exact path='/login' component={Login} />
         <PrivateRoute authed={false} exact path='/about' component={About} />
-        <PrivateRoute authed={false} exact path='/meetups/add' component={AddMeetup} />
-        <PrivateRoute authed={false} exact path='/meetups/edit/:id' component={EditMeetup} />}
+        <PrivateRoute authed={true} exact path='/meetups/add' component={AddMeetup} />
+        <PrivateRoute authed={true} exact path='/meetups/edit/:id' component={EditMeetup} />}
         <PrivateRoute authed={true} exact path='/meetups/:id' component={MeetupDetails} />
       </Switch>
     )

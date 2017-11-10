@@ -12,9 +12,9 @@ class Navbar extends Component {
 
             <ul className="right hide-on-small-only">
               <li>
-                <Link to='/'>
-                  <i className="fa fa-users"></i>
-                  Meetups
+                <Link to='/login'>
+                  {/* <i className="fa fa-users"></i> */}
+                  Login
                 </Link>
               </li>
             </ul>
