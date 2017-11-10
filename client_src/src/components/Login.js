@@ -47,7 +47,7 @@ class Login extends Component {
 
     render() {
         return (
-            <div>
+            <div className="container">
                 <h1>Login</h1>
                 <br />
                 <form onSubmit={this.onSubmit.bind(this)}>

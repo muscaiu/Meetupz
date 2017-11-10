@@ -65,7 +65,7 @@ class EditMeetup extends Component {
 
     render() {
         return (
-            <div>
+            <div className="container">
                 <h1>Edit</h1>
                 <br />
                 <Link className="btn grey" to="/">Back</Link>
