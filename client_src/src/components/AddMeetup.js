@@ -29,7 +29,7 @@ class AddMeetup extends Component {
             <div>
                 <br />
                 <Link className="btn grey" to="/">Back</Link>
-                <h1>Add Meetup</h1>
+                <h1>Add</h1>
                 <form onSubmit={this.onSubmit.bind(this)}>
                     <div className="input-field">
                         <input type="text" name="name" ref="name" />

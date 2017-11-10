@@ -12,13 +12,14 @@ class EditMeetup extends Component {
             city: '',
             address: ''
         }
-        this.getMeetupDetails()
+        const access_token = localStorage.getItem('access_token')
+        this.getMeetupDetails(access_token)
     }
 
-    getMeetupDetails() {
+    getMeetupDetails(access_token) {
         let meetupId = this.props.match.params.id
 
-        axios.get(`http://localhost:3000/api/meetups/${meetupId}`)
+        axios.get(`http://localhost:3000/api/meetups/${meetupId}`, { params: { access_token } })
             .then(response => {
                 this.setState({
                     id: response.data.id,
@@ -65,7 +66,7 @@ class EditMeetup extends Component {
     render() {
         return (
             <div>
-                <h1>Edit Meetup</h1>
+                <h1>Edit</h1>
                 <br />
                 <Link className="btn grey" to="/">Back</Link>
                 <form onSubmit={this.onSubmit.bind(this)}>

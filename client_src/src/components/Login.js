@@ -35,8 +35,13 @@ class Login extends Component {
             url: `http://localhost:3000/api/Users/login`,
             data: loginData
         }).then(response => {
-            console.log(response)
-            // this.props.history.push('/')
+            if (response.data.id) {
+                console.log('logged')
+                localStorage.setItem('access_token', response.data.id)
+                this.props.history.push('/')
+            } else {
+                console.log(response)
+            }
         }).catch(err => console.log(err))
     }
 

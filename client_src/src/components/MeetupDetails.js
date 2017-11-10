@@ -9,14 +9,14 @@ class MeetupDetails extends Component {
         this.state = {
             details: ''
         }
-
-        this.getMeetup()
+        const access_token = localStorage.getItem('access_token')
+        this.getMeetup(access_token)
     }
 
-    getMeetup() {
+    getMeetup(access_token) {
         let meetupId = this.props.match.params.id
 
-        axios.get(`http://localhost:3000/api/meetups/${meetupId}`)
+        axios.get(`http://localhost:3000/api/meetups/${meetupId}`, { params: { access_token } })
             .then(response => {
                 this.setState({ details: response.data }, () => {
                     // console.log(this.state.details)
